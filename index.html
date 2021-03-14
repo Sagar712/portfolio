@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo" onclick="window.location='#home'">Portfolio <i class="fas fa-code"></i></div>
+        <div class="menuitems">
+            <button class="btnn" onclick="handleclick('#home')">Home</button>
+            <button class="btnn" onclick="handleclick('#skills')">Skills</button>
+            <button class="btnn" onclick="handleclick('#about')">About</button>
+            <button class="btnn" onclick="window.location='./contact.html'">Contact</button>
+        </div>
+        <div class="bar" onclick="popupmenu()">
+            <i id="changeclas" class="fas fa-bars"></i>
+        </div>
+        
+    </header>
+    <div class="overlay" onclick="popupmenu()"></div>
+    <div class="page1" id="home">
+        <div class="cotent1">
+            <span style="font-size: 1.3rem;"><span style="color: rgb(255, 231, 94);">Namaste</span>, myself</span>
+            <br/>
+            <span style="font-size: 2.5rem;font-weight: bold;">Sagar Wankhade</span>
+            <br/>
+            <span style="font-size: 1.5rem;">and I am a<span id="animm" style="font-weight: bold;"> Developer <i  class="fas fa-code"></i></span></span>
+            <br/>
+            <button id="resume">Resume <i  class="fas fa-download"></i></button>
+        </div>
+
+        <img src="./images/CDR66075Low.jpg" alt="sagar pic">
+    </div>
+
+    <div class="page2" id="skills">
+        <div class="adju"></div>
+        <div class="content2">
+            <span style="font-size: 1.6rem;font-weight: bold;"> My Skills</span>
+            <hr class="skillline">
+            <hr class="skillline">
+            <br>
+            <br>
+            <div class="alltables">
+                <table class="tabl">
+                    <tr><th colspan="2">Languages</th></tr>
+                    <tr> <td>JAVA</td> <td>SQL</td> </tr>
+                    <tr> <td>JAVASCRIPT</td> <td>HTML, CSS</td> </tr>
+                    <tr> <td>C</td> <td>C++</td> </tr>
+                </table>
+                <table class="tabl">
+                    <tr><th colspan="2">IDE / Tools</th></tr>
+                    <tr> <td>Eclipse</td> <td>VS code</td> </tr>
+                    <tr> <td>Github</td> <td>Jenkins</td> </tr>
+                    <tr> <td>Soap UI</td> <td>Salesforce</td> </tr>
+                </table>
+                <table class="tabl">
+                    <tr><th colspan="2">Frameworks</th></tr>
+                    <tr><td></td><td></td></tr>
+                    <tr> <td>Spring Boot</td> <td>JUnit</td> </tr>
+                    <tr><td></td><td></td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="page3" id="about">
+        <div class="adju"></div>
+        <span style="font-size: 1.6rem;font-weight: bold;color: white;"> About me</span>
+        <div class="content3">
+            <div class="titles">
+                <p style="font-size: 1.2rem;">
+                    Full Name :
+                    <br>
+                    <br>
+                    Contact :
+                    <br>
+                    <br>
+                    Email Id :
+                    </p> 
+            </div>
+            <div class="info">
+                <p style="margin-left: 2rem; font-size: 1.2rem;">
+                    Sagar Vilas Wankhade
+                    <br>
+                    <br>
+                    +91 8888****53
+                    <br>
+                    <br>
+                    wankha***********@gmail
+                </p>
+                
+            </div>
+            
+
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
