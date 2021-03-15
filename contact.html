@@ -4,9 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./style.css">
+    <title>Contact</title>
 </head>
 <body>
-    <h1>Hello to contc section</h1>
+    <header class="header">
+        <div class="logo" onclick="window.location='./index.html#home'">Portfolio <i class="fas fa-code"></i></div>
+        <div class="menuitems">
+            <button class="btnn" onclick="handleclick('./index.html#home')">Home</button>
+            <button class="btnn" onclick="handleclick('./index.html#skills')">Skills</button>
+            <button class="btnn" onclick="handleclick('./index.html#about')">About</button>
+            <button class="btnn" onclick="window.location='./contact.html'">Contact</button>
+        </div>
+        <div class="bar" onclick="popupmenu()">
+            <i id="changeclas" class="fas fa-bars"></i>
+        </div>
+        
+    </header>
+    <div class="overlay" onclick="popupmenu()"></div>
+
+    <h1 style="color: white;margin-top: 3.5rem;">Welcome to contact section</h1>
+
+    <script src="./app.js"></script>
 </body>
 </html>
