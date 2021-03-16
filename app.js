@@ -24,3 +24,7 @@ function handleclick(varia) {
     window.location=varia;
     popupmenu();
 }
+
+function submitClick() {
+    alert("Server is not yet created for this website."+"\nPortfolio of Sagar Wankhade");
+}

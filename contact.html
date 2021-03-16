@@ -17,7 +17,12 @@
 </head>
 <body>
     <header class="header">
-        <div class="logo" onclick="window.location='./index.html#home'">Portfolio <i class="fas fa-code"></i></div>
+        <div class="logo" onclick="window.location='./index.html#home'">
+            <b>Portfolio</b> 
+            <i class="fas fa-code" style="background: -webkit-linear-gradient(right,  rgb(224, 255, 47), rgb(69, 250, 93), rgb(0, 238, 255));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;" id="itratee"></i>
+        </div>
         <div class="menuitems">
             <button class="btnn" onclick="handleclick('./index.html#home')">Home</button>
             <button class="btnn" onclick="handleclick('./index.html#skills')">Skills</button>
@@ -57,7 +62,7 @@
                     <input type="text" >
 
                 </div>
-                <button class="submii">Submit</button>
+                <button class="submii" onclick="submitClick()">Submit</button>
             </div>
             
         </div>
