@@ -366,8 +366,13 @@ input:hover{
         border-bottom-left-radius: 10px;
         transition: 0.2s ease;
     }
-    #changeclas{
-        animation: spinn 1s infinite linear;
+    .rotateicon{
+        transform: rotate(0deg);
+        transition: all 0.3s ease;
+    }
+    .rotateicon.active{
+        transform: rotate(90deg);
+        transition: all 0.3s ease;
     }
     
     .menuitems.active{
