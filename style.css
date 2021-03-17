@@ -90,7 +90,7 @@ header{
 
 .menuitems{
     margin-right: 1vw;
-    width: 30%;
+    width: 40%;
     
     display: flex;
     justify-content: space-evenly;
@@ -290,6 +290,15 @@ img.pic2{
     font-size: 2rem;
     font-weight: bold;
 }
+.allinform3{
+    text-align: start;
+    text-align: justify;
+    width: 30vw;
+    transform: translateX(25%);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
 
 .forma{
     display: flex;
@@ -349,6 +358,30 @@ input:hover{
     background-color: rgb(145, 0, 55);
     color: rgb(204, 204, 204);
 }
+.forma2{
+    
+    width: 50vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.downloadbtn{
+    height: 3rem;
+    width: 10rem;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    background-color: rgb(201, 0, 67);
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.downloadbtn:active{
+    background-color: rgb(114, 0, 38);
+}
 
 @media screen and (max-width:760px){
 
@@ -383,6 +416,9 @@ input:hover{
         -webkit-tap-highlight-color: rgba(0,0,0,0);
     }
     #resume{
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+    .downloadbtn{
         -webkit-tap-highlight-color: rgba(0,0,0,0);
     }
     .overlay{
@@ -525,7 +561,11 @@ input:hover{
         transform: translate(0, 0.8vh);
         font-size: 1.5rem;
     }
-
+    .allinform3{
+        width: 90vw;
+        transform: translate(0, -5vh);
+        font-size: 1.5rem;
+    }
     
     .forma{
         display: flex;
