@@ -64,8 +64,10 @@ header{
 }
 
 #itratee{
-    animation: itrr 4s infinite ease-in-out;
+    animation: itrr 3.5s infinite ease-in-out;
 }
+
+
 
 @keyframes itrr{
     0%{
