@@ -38,7 +38,9 @@
         
     </header>
     <div class="overlay" onclick="popupmenu()"></div>
-
+    <div class="loadingOverlay">
+        <h2> Working on it <i id="spinn" class="fas fa-spinner" style="color: rgb(2, 253, 241);"></i></h2>
+    </div>
     <div class="page4">
         <div class="adju"></div>
 
@@ -51,22 +53,27 @@
             </div>
 
             <div class="forma">
-                <div class="leftones">
-                    <p>Full Name:</p> 
-                    
-                    <p>Email Id:</p>
-                    
-                    <p>Status:</p>
+                <div class="maincon">
+                    <div class="leftones">
+                        <p>Full Name:<sup style="color: red;font-size: 1rem;">*</sup> </p> 
+                        
+                        <p>Email Id:<sup style="color: red;font-size: 1rem;">*</sup></p>
+                        
+                        <p>Requirement:</p>
+                    </div>
+                    <div class="rightones">
+                        <input type="text" id="name" autocomplete="off">
+                        
+                        <input type="text" id="email" autocomplete="off">
+                        
+                        <input type="text" id="status" autocomplete="off">
+    
+                    </div>
                 </div>
-                <div class="rightones">
-                    <input type="text" >
-                    
-                    <input type="text" >
-                    
-                    <input type="text" >
-
+                <div class="buttoncon">
+                    <button class="submii" onclick="submitClick()">Submit</button>
                 </div>
-                <button class="submii" onclick="submitClick()">Submit</button>
+                
             </div>
             
         </div>
