@@ -165,7 +165,7 @@ header{
     }
 }
 img.pic1{
-    width: 45vw;
+    width: 35vw;
     transform: translate(-5vw, 10vh);
     visibility: hidden;
     border-radius: 10px;
